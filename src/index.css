@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+
+  --color-primary: #8eff71;
+  --color-primary-container: #2ff801;
+  --color-secondary: #00e3fd;
+  --color-tertiary: #ff7350;
+  --color-error: #ff7350;
+  
+  --color-surface: #0e0e0e;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low: #131313;
+  --color-surface-container-high: #20201f;
+  --color-surface-container-highest: #262626;
+  --color-surface-bright: #2c2c2c;
+  
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #adaaaa;
+  --color-on-primary-fixed: #064200;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-container-lowest text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed overflow-x-hidden;
+  }
+}
+
+.kinetic-gradient {
+  background: linear-gradient(135deg, #8eff71 0%, #2ff801 100%);
+}
+
+.glass-card {
+  background: rgba(44, 44, 44, 0.4);
+  backdrop-filter: blur(20px);
+}
+
+.text-glow-primary {
+  text-shadow: 0 0 12px rgba(142, 255, 113, 0.4);
+}
+
+.text-glow-secondary {
+  text-shadow: 0 0 12px rgba(0, 227, 253, 0.4);
+}
