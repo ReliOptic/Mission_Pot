@@ -1,5 +1,5 @@
 {
   "name": "Mission Pot : 미션팟",
   "description": "고성능 습관 형성을 위한 고위험/고수익 스테이킹 플랫폼. 미션을 실패하면 예치금이 사라집니다.",
-  "requestFramePermissions": ["camera"]
+  "requestFramePermissions": []
 }
